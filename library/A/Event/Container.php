@@ -64,6 +64,12 @@ class Container
         return $this->getEvent($name);
     }
 
+    /**
+     * Call event
+     *
+     * @param string $name
+     * @return void
+     */
     public function callEvent($name)
     {
         $this->getEvent($name)->__invoke();
